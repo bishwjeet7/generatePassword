@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+#box{
+    width: 40%;
+    height: 30%;
+    margin: 10% 0 0 30%;
+    background: linear-gradient(to left, rgb(243, 194, 104), rgb(84, 84, 236));
+}
+#formBox{
+    padding: 10px;
+    box-shadow: -5px -5px 5px gray;
+}
+
+#formBox form{
+    display: grid;
+    grid-template-columns: 150px auto;
+    gap: 6px;
+}
+
+#formBox form input{
+    height: 4vh;
+    padding-left: 6px;
+    border-radius: 5px;
+    /* border: none; */
+}
+
+#formBox form button{
+    width: 150px;
+    height: 35px;
+}
+
+#formBox form button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    border-radius: 5px;
+    border: none;
+}
+
+#indexPage{
+    background: linear-gradient(to left, gray, rgb(241, 211, 154));
+}
+#textBox{
+    text-align: center;
+}
+#btnBox{
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#btnBox button{
+    width: 150px;
+    height: 5.5vh;
+    margin: .5vh;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+#btnBox button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#btnBoxauto{
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+#btnBoxauto button{
+    width: 150px;
+    height: 5.5vh;
+    margin: .5vh;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+#btnBoxauto button a{
+    text-decoration: none;
+    color: black;
+}
+
+#passwordGenerated{
+    width: 55vh;
+    height: 5.5vh;
+    border: none;
+    border-radius: 5px;
+}
+
+#showPasswordBox{
+    position: absolute;
+    top: 74vh;
+    left: 36%;
+}
+
+#showPasswordBoxUser{
+    position: absolute;
+    top: 85vh;
+    left: 36%;
+}
+@media only screen and (max-width: 760px)
+{
+    #box{
+        margin: 40% 0 0 5%;
+        width: 90%;
+        height: 40%;
+        background-color: aquamarine;
+    }
+    #formBox form{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 6px;
+    }
+    #genpass{
+        margin-left: 55%;
+    }
+    #btnBoxauto{
+        display: inline-block;
+    }
+    #passwordGenerated{
+        width: 100%;
+        margin: 2% 0 0 12%;
+        padding-left: 5px;
+    }
+    #btnBoxauto h4{
+        margin-left: 50%;
+    }
+    #btnBoxauto button{
+        margin-left: 35%;
+    }
+    #showPasswordBox {
+        margin-top: -8vh;
+        margin-left: -5%;
+    }
+}
